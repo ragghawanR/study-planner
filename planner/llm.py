@@ -5,7 +5,7 @@ import json
 import os
 from typing import Optional, Dict
 from datetime import datetime
-import openai
+from openai import OpenAI, RateLimitError, APIError
 
 from planner.models import StudyPlan
 
@@ -19,7 +19,7 @@ class LLMClient:
         if not self.api_key:
             raise ValueError("OPENAI_API_KEY not found in environment variables")
         
-        openai.api_key = self.api_key
+        self.client = OpenAI(api_key=self.api_key)
         self.model = model
         self.max_retries = 3
     
@@ -60,7 +60,7 @@ class LLMClient:
         """
         for attempt in range(self.max_retries):
             try:
-                response = openai.ChatCompletion.create(
+                response = self.client.chat.completions.create(
                     model=self.model,
                     messages=[
                         {
@@ -77,16 +77,16 @@ class LLMClient:
                 )
                 
                 # Extract the response text
-                content = response['choices'][0]['message']['content']
+                content = response.choices[0].message.content
                 return content
             
-            except openai.error.RateLimitError:
+            except RateLimitError:
                 print(f"⚠️  Rate limit hit. Retrying in a moment... (Attempt {attempt + 1}/{self.max_retries})")
                 if attempt < self.max_retries - 1:
                     import time
                     time.sleep(2 ** attempt)  # Exponential backoff
             
-            except openai.error.APIError as e:
+            except APIError as e:
                 print(f"⚠️  API error: {e} (Attempt {attempt + 1}/{self.max_retries})")
                 if attempt < self.max_retries - 1:
                     import time
@@ -183,7 +183,7 @@ class LLMClient:
             True if valid, False otherwise
         """
         try:
-            response = openai.ChatCompletion.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
                     {
@@ -193,7 +193,7 @@ class LLMClient:
                 ],
                 max_tokens=10
             )
-            return bool(response['choices'])
+            return bool(response.choices)
         except Exception as e:
             print(f"❌ API key validation failed: {e}")
             return False
