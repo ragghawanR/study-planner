@@ -1,0 +1,255 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Arrays",
+      "difficulty": "Easy",
+      "problems": [
+        "Two Sum",
+        "Best Time to Buy and Sell Stock",
+        "Contains Duplicate",
+        "Valid Parentheses",
+        "Merge Sorted Array",
+        "Remove Duplicates from Sorted Array"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Strings",
+      "difficulty": "Easy",
+      "problems": [
+        "Reverse String",
+        "Reverse Words in a String",
+        "Valid Anagram",
+        "String to Integer (atoi)",
+        "Longest Substring Without Repeating Characters",
+        "Group Anagrams"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "Linked Lists",
+      "difficulty": "Easy",
+      "problems": [
+        "Merge Two Sorted Lists",
+        "Reverse Linked List",
+        "Palindrome Linked List",
+        "Remove Nth Node from End",
+        "Intersection of Two Linked Lists",
+        "Linked List Cycle"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Binary Trees",
+      "difficulty": "Medium",
+      "problems": [
+        "Level Order Traversal",
+        "Inorder Traversal",
+        "Preorder Traversal",
+        "Postorder Traversal",
+        "Lowest Common Ancestor",
+        "Maximum Path Sum",
+        "Binary Tree from Inorder and Postorder",
+        "Right View of Binary Tree"
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Binary Search Trees",
+      "difficulty": "Medium",
+      "problems": [
+        "Validate Binary Search Tree",
+        "Kth Smallest Element in a BST",
+        "Lowest Common Ancestor of BST",
+        "Convert BST to Greater Sum Tree",
+        "Inorder Successor in BST",
+        "Serialize and Deserialize BST"
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Graphs",
+      "difficulty": "Medium",
+      "problems": [
+        "BFS Traversal",
+        "DFS Traversal",
+        "Number of Islands",
+        "Clone Graph",
+        "Course Schedule (Topological Sort)",
+        "Surrounded Regions",
+        "Word Ladder"
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "Dynamic Programming",
+      "difficulty": "Medium",
+      "problems": [
+        "Climbing Stairs",
+        "House Robber",
+        "Coin Change",
+        "Longest Increasing Subsequence",
+        "Edit Distance",
+        "Longest Common Subsequence",
+        "0/1 Knapsack Problem",
+        "Maximum Product Subarray"
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Sliding Window",
+      "difficulty": "Medium",
+      "problems": [
+        "Maximum Subarray of Size K",
+        "Longest Substring with K Distinct Characters",
+        "Minimum Window Substring",
+        "Fruit Into Baskets",
+        "Permutation in String",
+        "Maximum Consecutive Ones with One Flip"
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "Two Pointers",
+      "difficulty": "Medium",
+      "problems": [
+        "Valid Palindrome",
+        "Container with Most Water",
+        "3Sum",
+        "Trapping Rain Water",
+        "Sort Array by Parity",
+        "Two Sum II - Input Array is Sorted"
+      ]
+    },
+    {
+      "id": 10,
+      "topic": "Greedy",
+      "difficulty": "Medium",
+      "problems": [
+        "Assign Cookies",
+        "Jump Game",
+        "Interval Scheduling",
+        "Gas Station",
+        "Candy Distribution",
+        "Meeting Rooms II"
+      ]
+    },
+    {
+      "id": 11,
+      "topic": "Stack & Queue",
+      "difficulty": "Medium",
+      "problems": [
+        "Valid Parentheses",
+        "Min Stack",
+        "Implement Queue using Stacks",
+        "Daily Temperatures",
+        "Largest Rectangle in Histogram",
+        "Trapping Rain Water"
+      ]
+    },
+    {
+      "id": 12,
+      "topic": "Heap",
+      "difficulty": "Medium",
+      "problems": [
+        "Kth Largest Element",
+        "Top K Frequent Elements",
+        "Reorganize String",
+        "Max Heap / Min Heap Operations",
+        "Meeting Rooms II",
+        "IPO"
+      ]
+    },
+    {
+      "id": 13,
+      "topic": "Bit Manipulation",
+      "difficulty": "Medium",
+      "problems": [
+        "Single Number",
+        "Number of 1 Bits",
+        "Power of Two",
+        "Sum of Two Integers",
+        "Majority Element",
+        "Missing Number"
+      ]
+    },
+    {
+      "id": 14,
+      "topic": "Matrix",
+      "difficulty": "Medium",
+      "problems": [
+        "Set Matrix Zeroes",
+        "Spiral Matrix",
+        "Rotate Matrix",
+        "Search a 2D Matrix",
+        "Word Search",
+        "Median of Two Sorted Arrays"
+      ]
+    },
+    {
+      "id": 15,
+      "topic": "Backtracking",
+      "difficulty": "Hard",
+      "problems": [
+        "Permutations",
+        "Combinations",
+        "Subsets",
+        "Word Search II",
+        "N-Queens",
+        "Sudoku Solver",
+        "Generate Parentheses"
+      ]
+    },
+    {
+      "id": 16,
+      "topic": "Segment Trees & Fenwick Trees",
+      "difficulty": "Hard",
+      "problems": [
+        "Range Sum Query - Mutable",
+        "Range Sum Query 2D - Mutable",
+        "Count of Smaller Numbers After Self",
+        "Reverse Pairs"
+      ]
+    },
+    {
+      "id": 17,
+      "topic": "Trie",
+      "difficulty": "Hard",
+      "problems": [
+        "Implement Trie",
+        "Search Suggestions System",
+        "Word Break II",
+        "Alien Dictionary",
+        "Maximum XOR of Two Numbers in an Array"
+      ]
+    },
+    {
+      "id": 18,
+      "topic": "Hash Table",
+      "difficulty": "Medium",
+      "problems": [
+        "Two Sum",
+        "Valid Anagram",
+        "Group Anagrams",
+        "Intersection of Two Arrays",
+        "Happy Number",
+        "Isomorphic Strings"
+      ]
+    }
+  ],
+  "systemDesignTopics": [
+    "Caching",
+    "Load Balancing",
+    "Database Design",
+    "Message Queues",
+    "Microservices",
+    "Scalability",
+    "Consistency & Availability",
+    "Sharding",
+    "Replication",
+    "API Design",
+    "Security",
+    "Monitoring & Logging"
+  ]
+}
