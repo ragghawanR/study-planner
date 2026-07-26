@@ -49,16 +49,16 @@ jobs:
       
       - name: Commit progress updates
         if: always()
-          run: |
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            git add data/progress.json
-            if git diff --quiet && git diff --staged --quiet; then
-              echo "No changes to commit"
-            else
-              git commit -m "chore: update progress" || echo "Nothing to commit"
-              git push origin main || echo "Push failed - check branch permissions"
-            fi
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/progress.json
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update progress" || echo "Nothing to commit"
+            git push origin main || echo "Push failed - check branch permissions"
+          fi
       
       - name: Upload logs
         if: always()
